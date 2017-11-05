@@ -1,0 +1,36 @@
+.
+├── client
+│   ├── adduser.c------->添加员工
+│   ├── changuser.c----->修改信息
+│   ├── client.c-------->客户端入口
+│   ├── client.h-------->客户端头文件
+│   ├── deleuser.c------>删除员工
+│   ├── hist.c---------->日志模块
+│   ├── login.c--------->登录模块
+│   ├── makefile
+│   └── queryuser.c----->查询模块
+├── makefile------------>顶层makefile
+├── README
+└── server
+    ├── adduser.c------>添加员工
+    ├── changuser.c---->修改信息
+    ├── deleuser.c----->删除员工
+    ├── hist.c--------->日志模块
+    ├── login.c-------->登录模块
+    ├── makefile
+    ├── queryuser.c---->查询模块
+    ├── server.c------->服务端入口
+    ├── server.h------->服务端头文件
+    └── staff.db------->数据库
+
+2 directories, 21 files
+管理员用户名：ad    密码：admin
+普通用户名  ：win   密码：135
+
+BUG：
+	经测试，有不可重现的BUG，测试过程中在查看日志信息时有时
+	会输入完选项后不显示信息。另，日志信息出现过一次乱码。
+	至提交前测试3遍，所有功能正常。
+
+
+NOTE：SERVER端打印信息可以忽略，没有进行梳理。
